@@ -939,3 +939,238 @@ li {
     }
 }
 /*ABOUT END*/
+
+/* MODERN START */
+.modern {
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.modern__img {
+    margin: 0 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-delay: 3s;
+}
+
+.modern__img::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 46%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    background-color: var(--bg-white);
+    border-radius: 100%;
+    z-index: -1;
+}
+
+.modern__img-lg {
+    position: relative;
+    top: 0;
+    right: 0%;
+
+}
+
+.modern__right {
+    margin: 0 0;
+}
+
+.modern__ul {
+    margin: 45px 0 0 0;
+    padding: 0 0;
+}
+
+.modern__ul li {
+    list-style: none;
+    margin: 0 0 25px 0;
+}
+
+
+@media (max-width: 499px) {
+    .modern__img::before {
+        width: 300px;
+        height: 300px;
+    }
+
+    .modern__img-lg img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .modern__ul li {
+        display: flex;
+    }
+}
+
+@media (min-width: 1200px) {
+    .modern__img::before {
+        top: 50%;
+        right: -38%;
+    }
+
+    .modern__img-lg {
+        right: -13%;
+
+    }
+}
+/*MODERN END*/
+
+/*HOW TO START*/
+.steps {
+    padding: 50px 0 0 0;
+    overflow: hidden;
+}
+
+.steps__layer {
+    background-color: var(--bg-white);
+    padding: 70px 0 250px 0;
+    border-radius: 30px;
+    box-shadow: 0px 4px 30px #ede9fe;
+}
+
+.steps__list ul {
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.steps__list ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+
+.steps__list ul li:first-child:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    background-color: var(--light-bg);
+    border-radius: 15px;
+}
+
+
+.steps__list ul li::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    width: 4px;
+    height: calc(100% + 100px);
+    background-color: var(--light-bg);
+}
+
+.steps__list ul li:first-child::before {
+    top: 0;
+}
+
+.steps__list ul li:last-child::before {
+    top: 0;
+    height: 50%;
+}
+
+
+.steps__list-text,
+.steps__list-img {
+    width: 280px;
+}
+
+.steps__list-num {
+    background-image: url(../img/icon_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.steps__list-text--span {
+    font-weight: 600;
+    color: var(--dark-purple);
+}
+
+.steps__list-link {
+    margin: 0 0 8px 0;
+}
+
+.steps__list-link a {
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 100%;
+    background: var(--light-bg);
+    color: var(--text-white);
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.4s linear;
+    padding: 4px 14px;
+    margin: 0 0 0 16px;
+}
+
+.steps__list-link a:hover {
+    transition: all 0.4s linear;
+    background: var(--purple);
+}
+
+@media (max-width: 399px) {
+
+    .steps__list-num {
+        left: -18px !important;
+        width: 65px !important;
+        height: 65px !important;
+    }
+
+    .steps__list-text,
+    .steps__list-img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .steps__list ul li {
+        flex-direction: column;
+        padding: 0 0 0 30px;
+    }
+
+    .steps__list ul li::before {
+        left: 4%;
+    }
+
+    .steps__list ul li:first-child:after {
+        display: none;
+    }
+
+    .steps__list-num {
+        position: absolute;
+        top: -7px;
+        left: -14px;
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .steps__list-text,
+    .steps__list-img {
+        width: 360px;
+    }
+}
+/*HOW TO START END*/

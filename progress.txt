@@ -4,6 +4,7 @@ TODO:
 3. Slider
 4. Features Center Image Positioning
 5. About Button
+6. Code Indentation
 
 Progress:
-Upto About
+Upto STEPS
