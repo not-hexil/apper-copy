@@ -1,19 +1,19 @@
-// --------> Preloader <--------
-const loader = document.querySelector(".loader");
+// PRELOADER
+const loader = document.querySelector(".preloader");
 window.addEventListener("load", anyFun);
 
 function anyFun() {
-  loader.classList.add("dispear");
+  loader.classList.add("disappear");
 }
 
-// ----- NAVBAR SCROLL ------
+// NAVBAR SCROLL
 
 window.addEventListener("scroll", function () {
   var menu = this.document.querySelector(".menu");
   menu.classList.toggle("sticky", window.scrollY > 0);
 });
 
-// --------> Scrool Top <--------
+// GO TO TOP
 $(document).ready(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 40) {
@@ -28,10 +28,10 @@ $(document).ready(function () {
   });
 });
 
-// --------> Animation <--------
+// ANIMATIONS
 AOS.init();
 
-// --------> Banner Slider <--------
+// BANNNER SLIDES
 $(".banner-slider").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -44,7 +44,7 @@ $(".banner-slider").slick({
   dots: true,
 });
 
-// --------> Trusted Slider <--------
+// TRUSTED SLIDES
 $(".trusted_slide").slick({
   dots: true,
   slidesToShow: 5,
@@ -70,15 +70,15 @@ $(".trusted_slide").slick({
   ],
 });
 
-// --------> VenoBox <--------
+// VENOBOX
 new VenoBox({
   selector: ".video__card",
 });
 
-// --------> CounterUP <--------
+// COUNTERUP
 $(".about__timer-count").counterUp({ delay: 10, time: 1000 });
 
-// --------> Customer__Slider <--------
+// CUSTOMER SLIDES
 $(".customer__slider").slick({
   infinite: true,
   slidesToShow: 1,
@@ -90,7 +90,7 @@ $(".customer__slider").slick({
   dots: true,
 });
 
-// --------> Interface__Slider <--------
+// INTERFACE SLIDES
 $(".interface__slider").slick({
   infinite: true,
   slidesToShow: 5,
